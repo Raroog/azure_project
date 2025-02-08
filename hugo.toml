@@ -1,3 +1,30 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://your-app-name.azurestaticapps.net/"
+languageCode = "en-us"
+title = "Event Management App"
+themesdir = "./themes"
+theme = "hugo-fresh"
+
+[params]
+  title = "Event Management App"
+  description = "Manage, share, and register for events."
+  navbarcolor = "#0078D4"
+
+  [params.navbarlogo]  # ✅ Correct format (as an object)
+    src = "/images/logo.png"  # The actual logo path
+    width = 100  # Adjust based on your design
+    height = 50
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "Events"
+  url = "/events/"
+  weight = 2
+
+[[menu.main]]
+  name = "Register"
+  url = "/register/"
+  weight = 3
